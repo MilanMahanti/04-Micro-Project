@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Rowdies:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+
+h1 {
+  font-family: "Rowdies", cursive;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 90vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  outline: none;
+  border: 1px solid white;
+  background-color: rgba(244, 243, 247, 0.75);
+  transition: all 0.2s;
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255);
+}
+
+.output {
+  grid-column: 1/-1;
+  text-align: right;
+  font-size: 2rem;
+  background-color: #0c1b33;
+  color: rgba(244, 243, 247, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#icon {
+  color: #e56b70;
+}
+#color {
+  background-color: #e56b70;
+}
+#color:hover {
+  background-color: #e05256;
+}
